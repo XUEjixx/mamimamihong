@@ -1,0 +1,917 @@
+.body{
+    background: #FAFAFB;
+    width: 100%;
+    min-width: 1024px;
+    max-width: 1920px;
+    position: absolute;
+    display: none;
+}
+.bodyup{
+    display: block;
+    -webkit-animation: bodyup 2s forwards;
+            animation: bodyup 2s forwards;
+}
+.bodydown{
+    display: block;
+    -webkit-animation: bodydown 2s forwards;
+            animation: bodydown 2s forwards;
+}
+@-webkit-keyframes bodyup{
+    0%{
+        top: 100%;
+        left: 0;
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg)
+    }
+    100%{
+        top: 0;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+}
+@keyframes bodyup{
+    0%{
+        top: 100%;
+        left: 0;
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg)
+    }
+    100%{
+        top: 0;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+}
+@-webkit-keyframes bodydown{
+    0%{
+        top: 0;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100%{
+        top: 100%;
+        left: 0;
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+}
+@keyframes bodydown{
+    0%{
+        top: 0;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100%{
+        top: 100%;
+        left: 0;
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+}
+.menu{
+    width: 100%;
+    height: 50px;
+    background: #E2614C;
+}
+.menu ul{
+    margin: 0 20% 0 0;
+    padding: 0;
+    float: right;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+}
+.menu ul li{
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+#back{
+    line-height: 80px;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    left: 28.5%;
+    color: #fff;
+    cursor: pointer;
+    margin: 0;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+}
+#back:hover{
+    color: #FFB300;
+}
+#arr{
+    line-height: 80px;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    left: 32%;
+    cursor: pointer;
+    margin: 0;
+    color: #FFB300;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+}
+.menu .logo{
+    width: 80px;
+    height: 80px;
+    margin-top: 5px;
+    margin-left: 21%;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+}
+@media (max-width:1400px) {
+    .menu ul{
+        margin: 0 15% 0 0;
+    }
+    .menu .logo{
+        margin-left: 7%;
+    }
+    #back{
+        left: 18%;
+    }
+    #arr{
+        left: 23%;
+    }
+}
+.menu ul li h3{
+    margin: 0;
+}
+.menu ul .colorred{
+    color: red;
+}
+.menu .user,
+.menu .messages,
+.menu .newdesireimg,
+.menu .esc{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.menu .usermore{
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+    padding-left: 70px;
+}
+.menu .usermore h3{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+.menu ul .messagemore div{
+    position: relative;
+}
+.menu ul .messagemore .smallarrow{
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    border: 10px solid transparent;
+    border-bottom-color: #fff;
+    z-index: 999;
+    display: none;
+}
+.menu ul .messagemore ul{
+    width: 150px;
+    position: absolute;
+    top: 40px;
+    left: -20px;
+    padding: 2px;
+    margin: 0;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 1px 3px 3px #ccc;
+            box-shadow: 0px 1px 3px 3px #ccc;
+    display: none;
+}
+.menu ul .messagemore ul li{
+    float: none;
+    padding: 9px 13px;
+    font-size: 14px;
+    margin: 0;
+    cursor: pointer;
+}
+.menu ul .messagemore ul li:hover{
+    background: rgb(242, 242, 245);
+    color: #FFB300;
+}
+.menu ul .messagemore ul hr{
+    margin: 0;
+}
+.menu ul .messagemore:hover ul{
+    display: block;
+}
+.menu ul .messagemore:hover div{
+    display: block;
+}
+.select{
+    width: 100%;
+    height: 80px;
+    background: #E2614C;
+    padding-top: 30px;
+}
+.select ul{
+    margin: 0;
+    margin-left: 18%;
+    margin-top: 10px;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+}
+.select ul li{
+    width: 100px;
+    height: 69px;
+    float: left;
+    text-align: center;
+    line-height: 69px;
+    color: rgb(214, 213, 226);
+    margin-right: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.select ul li:hover{
+    color: #fff;
+}
+.select .click{
+    color: #fff;
+    border-bottom: 2px solid rgb(255, 211, 65);
+}
+@media (max-width:1400px) {
+    .select ul{
+        margin: 0;
+        margin-left: 2%;
+        margin-top: 10px;
+    }
+}
+.sort{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 25px;
+    background: #16C2C2;
+    position: absolute;
+    top: 130px;
+    left: 80.5%;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+}
+@media (max-width:1400px){
+    .sort{
+        left: 90%;
+    }
+}
+.sort img{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+.sortul{
+    width: 50px;
+    height: 120px;
+    text-align: center;
+    line-height: 30px;
+    background: rgb(231, 231, 231);
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-top: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -999;
+    display: none;
+}
+.sortuldown{
+    display: block;
+    -webkit-animation: sortuldown 1s forwards;
+            animation: sortuldown 1s forwards;
+    overflow: hidden;
+}
+@-webkit-keyframes sortuldown{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 120px;
+    }
+}
+@keyframes sortuldown{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 120px;
+    }
+}
+.sortulup{
+    display: block;
+    -webkit-animation: sortulup 1s forwards;
+            animation: sortulup 1s forwards;
+    overflow: hidden;
+}
+@-webkit-keyframes sortulup{
+    0%{
+        height: 120px;
+    }
+    100%{
+        height: 0;
+    }
+}
+@keyframes sortulup{
+    0%{
+        height: 120px;
+    }
+    100%{
+        height: 0;
+    }
+}
+.sortul ul{
+    margin: 0;
+    padding: 0;
+    color: #ccc;
+}
+.alldesire{
+    width: 1135px;
+    margin: 0 auto;
+    margin-top: 60px;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+}
+.minedesire{
+    width: 1135px;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: none;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+}
+.desire{
+    width: 355px;
+    height: 335px;
+    float: left;
+    background: #fff;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    -webkit-transition-duration:0.5s;
+            transition-duration:0.5s;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+}
+.desire:hover{
+    margin-top: -5px;
+    -webkit-box-shadow: 0 5px 10px 4px #ccc;
+            box-shadow: 0 5px 10px 4px #ccc;
+    margin-bottom: 45px;
+}
+.margin{
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 0px;
+}
+.desire .text{
+    width: 310px;
+    height: 220px;
+    margin: 0 auto;
+    margin-top: 10px;
+    cursor: pointer;
+    line-height: 28px;
+    text-indent: 2em;
+    padding: 5px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box; 
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:8; 
+    -webkit-transition-duration: 1s; 
+            transition-duration: 1s;
+}
+.desire .information{
+    position: relative;
+}
+.desire .information p{
+    display: inline-block;
+    margin-bottom: 0;
+    color: grey;
+    height: 25px;
+    margin-top: 10px;
+}
+.desire .information img{
+    width: 20px;
+    height: 20px;
+}
+.desire .information .good{
+    position: absolute;
+    top: 0;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+}
+.desire .information .good img{
+    cursor: pointer;
+}
+.desire .information .user{
+    width: 200px;
+    margin-right: 35px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+.desire .information .user .username{
+    position: absolute;
+    top: 30px;
+    left: 80px;
+}
+.desire .information .portrait{
+    width:50px;
+    height:50px;
+    border-radius:50px;
+    border:1px solid #ccc;
+    overflow:hidden;
+    -webkit-box-shadow:0 0 1px #ccc;
+    box-shadow:0 0 1px #ccc;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+}
+.desire .information .portrait img{
+    width:100%;
+    min-height:100%;
+}
+.desire .information .comment{
+    position: absolute;
+    top: 40px;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+}
+@media (max-width:1400px){
+    .alldesire{
+        width: 900px;
+    }
+    .minedesire{
+        width: 900px;
+    }
+    .desire{
+        width: 250px;
+        height:250px;
+    }
+    .desire .text{
+        width: 230px;
+        height: 130px;
+        -webkit-line-clamp:5; 
+    }
+    .desire .information .good{
+        left: 150px;
+    }
+    .desire .information .comment{
+        left: 150px;
+    }
+}
+.desire .information .comment img{
+    cursor: pointer;
+}
+.desire .information .delete{
+    width: 100%;
+    height: 40px;
+    background: #1E9954;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    border-radius: 20px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.6;
+    font-size: 20px;
+    color: #ccc;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+}
+.desire .information .delete:hover{
+    opacity: 1;
+    background: #E2614C;
+    color: #000;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+}
+.minedesire .desire .information .good{
+    left: 20px;
+}
+.minedesire .desire .information .comment{
+    top:0;
+    left: 250px;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+}
+@media (max-width:1400px) {
+    .minedesire .desire .information .comment{
+        left: 150px;
+    }
+}
+.close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.desiremore{
+    width: 600px;
+    height: 600px;
+    background: #fff;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    margin-left: -300px;
+    display: none;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+}
+.desiremore .text{
+    width: 500px;
+    height: 320px;
+    overflow-y: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-indent: 2em;
+    color: #E2614C;
+    line-height: 36px;
+    font-size: 20px;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+    -webkit-box-shadow: 2px 2px 5px 2px #ccc;
+            box-shadow: 2px 2px 5px 2px #ccc;
+    border-radius: 10px;
+}
+.desiremore .realize{
+    width: 400px;
+    height: 80px;
+    background: #E2614C;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    margin-left: -200px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 40px;
+    color: #ccc;
+    opacity: 0.5;
+    border-radius: 40px;
+    cursor: pointer;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+}
+.desiremore .realize:hover{
+    color: #fff;
+    opacity: 1;
+    -webkit-box-shadow: 0 3px 8px 2px #ccc;
+            box-shadow: 0 3px 8px 2px #ccc;
+    -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+}
+.desiremore .already{
+    width: 400px;
+    height: 80px;
+    background: #E2614C;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    margin-left: -200px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 32px;
+    color: #ccc;
+    opacity: 0.5;
+    border-radius: 40px;
+    display: none;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+}
+.desiremore .user{
+    width: 200px;
+    margin-right: 35px;
+    margin-left: 15px;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+}
+.desiremore .portrait{
+    width:100px;
+    height:100px;
+    border-radius:50px;
+    border:1px solid #ccc;
+    overflow:hidden;
+    -webkit-box-shadow:0 0 1px #ccc;
+    box-shadow:0 0 1px #ccc;
+    display: inline-block;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+}
+.desiremore .portrait img{
+    width:100%;
+    min-height:100%;
+}
+.desiremore .good{
+    font-size: 20px;
+    margin-left: 170px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 0;
+    position: absolute;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+}
+.desiremore .good img{
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+}
+@media (max-width:1400px) {
+    .desiremore{
+        width: 400px;
+        height: 400px;
+        background: #fff;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        margin-left: -200px;
+    }
+    .desiremore .text{
+        width: 300px;
+        height: 180px;
+        line-height: 26px;
+        font-size: 16px;
+    }
+    .desiremore .realize{
+        width: 300px;
+        height: 40px;
+        bottom: 20px;
+        margin-left: -150px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+    .desiremore .already{
+        width: 300px;
+        height: 40px;
+        bottom: 20px;
+        margin-left: -150px;
+        line-height: 40px;
+        font-size: 18px;
+        display: none;
+    }
+    .desiremore .user{
+        margin-right: 35px;
+        margin-left: -20px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .desiremore .portrait{
+        width:60px;
+        height:60px;
+        border-radius:30px;
+    }
+    .desiremore .good{
+        font-size: 18px;
+        margin-left: 70px;
+        margin-top: 15px;
+    }
+    .desiremore .good img{
+        width: 60px;
+        height: 60px;
+    }
+}
+.body .hover{
+    width: 100%;
+    height: 1400px;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+    display: none;
+}
+.newdesire{
+    width: 600px;
+    background: #fff;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    margin-left:-300px;
+    opacity: 1;
+    border-top: 3px solid #FFB300;
+    border-radius: 5px;
+    display: none;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+}
+@media (max-width:1400px) {
+    .body .hover{
+        width: 100%;
+        height: 1136px;
+        background: #000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.2;
+        display: none;
+    }
+    .newdesire{
+        top: 200px;
+    }
+}
+.newdesire p{
+    margin: 10px 20px;
+
+    font-weight: bold;
+}
+.newdesire p img{
+    width: 20px;
+    height: 20px;
+    float: right;
+    cursor: pointer;
+}
+.newdesire textarea{
+    width: 500px;
+    height: 100px;
+    max-height: 300px;
+    margin: 30px 50px 0 50px;
+    resize: none;
+    border: 1px solid #ccc;
+    outline-color:  #FFB300;
+    font-size: 16px;
+    padding: 5px;
+}
+.newdesire .dogeemoji{
+    width: 20px;
+    height: 20px;
+    margin-left: 50px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.newdesire div{
+    display: inline-block;
+    margin-left: 355px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.newdesire span{
+    cursor: pointer;
+}
+.newdesire #publish{
+    width: 80px;
+    height: 30px;
+    background: #FF8140;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 0;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.newdesire #publish:hover{
+    background: #F7671D;
+}
+.newdesire div img{
+    width: 12px;
+    height: 12px;
+}
+.body .login{
+    width: 400px;
+    background: #fff;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    margin-left:-200px;
+    border-top: 3px solid #FFB300;
+    border-radius: 5px;
+    display: none;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+}
+@media (max-width:1400px) {
+    .body .login{
+        top: 200px;
+    }
+}
+.body .login div{
+    margin-top: 10px;
+    text-align: center;
+}
+.body .login input{
+    width: 200px;
+    height: 30px;
+    margin-left: 10px;
+}
+.body .login .botton{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    background: #E2614C;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.page{
+    width: 200px;
+    height: 30px;
+    margin-left: 69.5%;
+}
+.page ul li{
+    float: left;
+    font-size: 14px;
+    height: 20px;
+}
+.page ul li div{
+    width: 20px;
+    height: 20px;
+    background: #FFF;
+    border-radius: 20px;
+    color: #000;
+    text-align: center;
+    line-height: 20px;
+    margin: 0 5px;
+    margin-top: -3px;
+    cursor: pointer;
+}
+.page ul li .now{
+    background: red;
+    color: #fff;
+}
+.page ul .total{
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: -4px;
+    margin-left: 10px;
+}
+.page ul li img{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+.lh2{
+    width: 100px;
+    font-size: 80px;
+    position: absolute;
+    top: 140px;
+    left: 100px;
+    color: #E2614C;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+}
+.lh2 img{
+    width: 200px;
+    height: 200px;
+}
+.rh2{
+    width: 50px;
+    font-size: 60px;
+    position: absolute;
+    top: 200px;
+    right: 150px;
+    color: #E2614C;
+    margin: 0;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+}
+@media (max-width:1400px) {
+    .lh2{
+        width: 20px;
+        font-size: 20px;
+        position: absolute;
+        top: 180px;
+        left: 88%;
+        color: #E2614C;
+    }
+    .lh2 img{
+        width: 100px;
+        height: 100px;
+    }
+    .rh2{
+        width: 20px;
+        font-size: 20px;
+        position: absolute;
+        top: 450px;
+        right: 100px;
+        color: #E2614C;
+        margin: 0;
+    }
+}
